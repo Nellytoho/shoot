@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -43,15 +44,14 @@
               </div>
               <div id="myNav" class="overlay">
                 <div class="overlay-content">
-                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  <a class="" href="about.html">About </a>
-                  <a class="" href="gallery.html">Gallery </a>
-                  <a class="" href="blog.html">Blog </a>
-                  <a class="" href="picstudio-html/testimonial.html">Testimonial </a>
+                  <a class="nav-link" href="{% url 'homepage' %}">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'my-about'%} ">About </a>
+                  <a class="nav-link" href="{% url 'my-gallery' %}">Gallery </a>
+                  <a class="nav-link" href="{% url 'my-blog' %}">Blog </a>
                 </div>
               </div>
             </div>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'homepage'%}">
               <span>
                 Picstudio
               </span>
@@ -211,13 +211,13 @@
               <div class="info_link-box">
                 <ul>
                   <li class=" active">
-                    <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="" href="{% url 'homepage' %}">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="">
-                    <a class="" href="about.html">About </a>
+                    <a class="" href="{% url 'my-about' %}">About </a>
                   </li>
                   <li class="">
-                    <a class="" href="gallery.html">Gallery </a>
+                    <a class="" href="{% url 'my-gallery' %}">Gallery </a>
                   </li>
                   <li class="">
                     <a class="" href="blog.html">Blog </a>
@@ -259,8 +259,8 @@
   <footer class="footer_section ">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
-        <a href="https://html.design/">Free Html Templates</a>
+{#        &copy; <span id="displayYear"></span> All Rights Reserved. Design by#}
+{#        <a href="https://html.design/">Free Html Templates</a>#}
       </p>
     </div>
   </footer>
